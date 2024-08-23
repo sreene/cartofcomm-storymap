@@ -3,7 +3,7 @@ var externalData = {
       {
           "name": 'PCW',
           "type": 'geojson',
-          "url": './map/sources/network.geojson'
+          "url": ''
         },
     ],
     layers: [
