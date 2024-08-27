@@ -2,11 +2,11 @@ var config = {
     style: './map/style.json',
     showMarkers: true,
     markerColor: 'green',
-    inset: true, // if inset map is set to true, legend will be disabled.
-    legend: false, // if legend is set to true, inset will be disabled.
+    inset: false, // if inset map is set to true, legend will be disabled.
+    legend: true, // if legend is set to true, inset will be disabled.
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
-    useCustomLayers: true, //set true for enabling custom layers from sources.js
+    useCustomLayers: false, //set true for enabling custom layers from sources.js
     bookmarks: false,
     chapterReturn: true,
     title: 'My first StoryMap',
@@ -25,7 +25,7 @@ var config = {
             caption: 'A caption for your image',
             website: '<a href="" target="_blank">Website</a>',
             author: 'Felipe Valdez',
-            legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
+            //legend: '<span style="font-size: 0.85em;"><em>Legend content</em><br></span><img src="/images/legend1.png" style="display: block; margin-top: 10px; width: 100%; max-width: 200px;">',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [-75.15552, 39.98203],
@@ -39,11 +39,11 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
+                 {
+                //     layer: 'pcwnet',
                 //     opacity: 1,
                 //     duration: 5000
-                // }
+                 }
                 // {
                 //      layer: 'countries-fill',
                 //      opacity: 1
@@ -62,6 +62,7 @@ var config = {
             hidden: false,
             title: 'Second slide',
             image: './images/image2.png',
+            legend: '<span style="font-size: 0.85em;"><em>Legend content</em><br></span><img src="/images/legend1.png" style="display: block; margin-top: 10px; width: 100%; max-width: 200px;">',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-75.13331, 39.98741],
@@ -75,9 +76,39 @@ var config = {
             callback: '',
             onChapterEnter: [
                  {
-                     layer: 'pcw-points',
+                     layer: 'pcwnet',
                      opacity: 1
                  }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'pcwnet',
+                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: 'chapter3',
+            alignment: 'right',
+            hidden: false,
+            title: 'Third slide',
+            image: './images/image2.png',
+            description: 'Copy these sections to add to your story.',
+            location: {
+                center: [-75.13331, 39.98741],
+                zoom: 15,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+            //     {
+            //         layer: 'pcwnet',
+            //         opacity: 1
+            //     }
             ],
             onChapterExit: []
         }

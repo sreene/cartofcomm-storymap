@@ -3,7 +3,7 @@ var externalData = {
       {
           "name": 'PCW',
           "type": 'geojson',
-          "url": ''
+          "data": 'https://raw.githubusercontent.com/fmvaldezg/maplibre-storymap/main/map/sources/network.geojson'
         },
     ],
     layers: [
@@ -12,14 +12,11 @@ var externalData = {
           "type": "circle",
           "source": "PCW",
         //  "source-layer": "",
-          "layout": {
-              
-          },
           "paint": {
-              "circle-radius": 2,
-              "circle-color": "red",
+              "circle-radius": 8,
+              "circle-color": "#0f0f0f",
               "circle-stroke-width": 0.5,
-              "circle-stroke-color": "black"
+              "circle-stroke-color": "#0f0f0f"
 
           }
       }
