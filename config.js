@@ -2,14 +2,14 @@ var config = {
     style: './map/style.json',
     showMarkers: true,
     markerColor: 'green',
-    inset: false, // if inset map is set to true, legend will be disabled.
-    legend: true, // if legend is set to true, inset will be disabled.
+    inset: true, // if inset map is set to true, legend will be disabled.
+    legend: false, // if legend is set to true, inset will be disabled.
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
     useCustomLayers: false, //set true for enabling custom layers from sources.js
-    bookmarks: false,
+    bookmarks: true,
     chapterReturn: true,
-    title: 'My first StoryMap',
+    title: 'A tour of Temple University Campuses',
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Temple_University_Logo.svg/320px-Temple_University_Logo.svg.png",
     subtitle: 'Demo for the fall 2024 workshop',
     byline: 'By Felipe Valdez',
@@ -20,13 +20,13 @@ var config = {
             id: 'chapter1',
             alignment: 'left',
             hidden: false,
-            title: 'Slide 1',
+            title: 'Main Campus',
             image: './images/image1.png',
             caption: 'A caption for your image',
-            website: '<a href="" target="_blank">Website</a>',
+            website: '<a href="https://temple.maps.arcgis.com/apps/MapSeries/index.html?appid=9b76db43c88946cfa92d269463ac26dd" target="https://temple.maps.arcgis.com/apps/MapSeries/index.html?appid=9b76db43c88946cfa92d269463ac26dd">Website</a>',
             author: 'Felipe Valdez',
             //legend: '<span style="font-size: 0.85em;"><em>Legend content</em><br></span><img src="/images/legend1.png" style="display: block; margin-top: 10px; width: 100%; max-width: 200px;">',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'Temple’s bustling Main Campus crackles with energy, thanks to its location in the heart of Philadelphia, numerous new building projects and the 10,000 students who now live on or around our increasingly residential campus. On- and off-campus activities abound, including more than 300 student organizations; Division I sporting events; and nearby restaurants, shops and entertainment.',
             location: {
                 center: [-75.15552, 39.98203],
                 zoom: 16.57,
