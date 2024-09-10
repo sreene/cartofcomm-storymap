@@ -173,7 +173,7 @@ var config = {
             description: 'Housed in a historic, light-filled villa on the banks of the Tiber River, Temple Rome immerses students in the richness of Italian culture. An eclectic faculty, frequent field trips, small class sizes and internship opportunities provide students with an unforgettable study-abroad experience',
             location: {
                 center: [12.48254, 41.90687],
-                zoom: 15,
+                zoom: 12,
                 pitch: 0,
                 bearing: 0,
                 speed: 0.7
