@@ -1,12 +1,12 @@
 var config = {
     style: './map/style.json',
     showMarkers: true,
-    markerColor: 'green',
+    markerColor: '#a41e35',
     inset: true, // if inset map is set to true, legend will be disabled.
     legend: false, // if legend is set to true, inset will be disabled.
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps. You will need to provide your own terrain tiles.
-    useCustomLayers: false, //set true for enabling custom layers from sources.js
+    useCustomLayers: true, //set true for enabling custom layers from sources.js
     bookmarks: true,
     chapterReturn: true,
     title: 'A tour of Temple University Campuses',
@@ -76,17 +76,17 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                 //{
-                 //    layer: 'pcwnet',
-                 //    opacity: 1
-                 //}
-            ],
-            onChapterExit: [
-                //{
-                //    layer: 'pcwnet',
-                //    opacity: 0
-                //}
-            ]
+                {
+                    layer: 'pcwnet',
+                    opacity: 1
+                }
+           ],
+           onChapterExit: [
+               {
+                   layer: 'pcwnet',
+                   opacity: 0
+               }
+           ]
         },
         {
             id: 'chapter3',
@@ -106,13 +106,8 @@ var config = {
             rotateAnimation: true,
             mapInteractive: false,
             callback: '',
-            onChapterEnter: [
-            //     {
-            //         layer: 'pcwnet',
-            //         opacity: 1
-            //     }
-            ],
-            onChapterExit: []
+            onChapterEnter: [],
+           onChapterExit: []
         },
         {
             id: 'chapter4',
@@ -177,6 +172,32 @@ var config = {
             location: {
                 center: [12.48254, 41.90687],
                 zoom: 15,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [
+            //     {
+            //         layer: 'pcwnet',
+            //         opacity: 1
+            //     }
+            ],
+            onChapterExit: []
+        }, 
+        {
+            id: 'chapter7',
+            alignment: 'center',
+            hidden: false,
+            title: 'Workshop',
+            image: './images/image7.png',
+            //website: '<a href="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer" target="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer">Website</a>', 
+            description: 'Do you want to learn how to create your own story map like this? Visit our hands on <a href="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer" target="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer">online tutorial.</a>',
+            location: {
+                center: [-75.15515, 39.98185],
+                zoom:2.27,
                 pitch: 0,
                 bearing: 0
             },
