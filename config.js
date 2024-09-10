@@ -9,6 +9,7 @@ var config = {
     useCustomLayers: true, //set true for enabling custom layers from sources.js
     bookmarks: true,
     chapterReturn: true,
+    auto: true,
     title: 'A tour of Temple University Campuses',
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Temple_University_Logo.svg/320px-Temple_University_Logo.svg.png",
     subtitle: 'Demo for the fall 2024 workshop',
@@ -26,7 +27,7 @@ var config = {
             website: '<a href="https://temple.maps.arcgis.com/apps/MapSeries/index.html?appid=9b76db43c88946cfa92d269463ac26dd" target="https://temple.maps.arcgis.com/apps/MapSeries/index.html?appid=9b76db43c88946cfa92d269463ac26dd">Historical map</a>',
             //author: 'Felipe Valdez',
             //legend: '<span style="font-size: 0.85em;"><em>Legend content</em><br></span><img src="/images/legend1.png" style="display: block; margin-top: 10px; width: 100%; max-width: 200px;">',
-            description: 'Temple’s bustling Main Campus crackles with energy, thanks to its location in the heart of Philadelphia, numerous new building projects and the 10,000 students who now live on or around our increasingly residential campus. On- and off-campus activities abound, including more than 300 student organizations; Division I sporting events; and nearby restaurants, shops and entertainment.',
+            description: 'Temple’s bustling Main Campus crackles with energy, thanks to its location in the heart of Philadelphia, numerous new building projects and the 10,000 students who now live on or around our increasingly residential campus. On- and off-campus activities abound, including more than 300 student organizations; Division I sporting events; and nearby restaurants, shops and entertainment. <iframe width="100%" height="800px" src="https://temple.maps.arcgis.com/apps/MapSeries/index.html?appid=9b76db43c88946cfa92d269463ac26dd" frameborder="0" scrolling="no"></iframe>',
             location: {
                 center: [-75.15552, 39.98203],
                 zoom: 16.57,
@@ -147,7 +148,8 @@ var config = {
                 center: [139.67390, 35.64250],
                 zoom: 12,
                 pitch: 0,
-                bearing: 0
+                bearing: 0,
+                speed: 0.7
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -173,7 +175,8 @@ var config = {
                 center: [12.48254, 41.90687],
                 zoom: 15,
                 pitch: 0,
-                bearing: 0
+                bearing: 0,
+                speed: 0.7
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -194,7 +197,7 @@ var config = {
             title: 'Workshop',
             image: './images/image7.png',
             //website: '<a href="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer" target="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer">Website</a>', 
-            description: 'Do you want to learn how to create your own story map like this? Visit our hands on <a href="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer" target="https://studyabroad.temple.edu/programs/temple-university-rome/semester-academic-year-summer">online tutorial.</a>',
+            description: 'Do you want to learn how to create your own story map like this? Visit our hands on <a href="https://felipevaldez.com/storytelling_maplibre_workshop/" target="https://felipevaldez.com/storytelling_maplibre_workshop/">online tutorial.</a>',
             location: {
                 center: [-75.15515, 39.98185],
                 zoom:2.27,
