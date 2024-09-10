@@ -9,7 +9,7 @@ var config = {
     useCustomLayers: true, //set true for enabling custom layers from sources.js
     bookmarks: true,
     chapterReturn: true,
-    auto: true,
+    auto: false,
     title: 'A tour of Temple University Campuses',
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Temple_University_Logo.svg/320px-Temple_University_Logo.svg.png",
     subtitle: 'Demo for the fall 2024 workshop',
