@@ -11,7 +11,7 @@ var config = {
     chapterReturn: true,
     auto: false,
     title: 'Cartographies',
-    logo: "./images/Header_Map.jpg",
+    logo: './images/Header_Map.jpg',
     subtitle: 'This is a demo for using Maplibre repository',
     byline: 'Tinkering By Sreedhar Nemmani',
     mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
