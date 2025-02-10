@@ -10,9 +10,9 @@ var config = {
     bookmarks: true,
     chapterReturn: true,
     auto: false,
-    title: 'A tour of Temple University Campuses',
+    title: 'Cartographies',
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Temple_University_Logo.svg/320px-Temple_University_Logo.svg.png",
-    subtitle: 'Demo for the fall 2024 workshop',
+    subtitle: 'This is a demo for using Maplibre repository',
     byline: 'By Felipe Valdez',
     mobileview: '<div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">', // to add custom messaging in the header for mobile devices
     footer: 'Source: source citations, etc.<br> Created using <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> template.',
